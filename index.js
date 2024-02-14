@@ -8,16 +8,15 @@ let buttonColours = [
     "yellow"
 ];
 
-//game pattern of random generated array
+//declare a variable with empty array
 let gamePattern = [];
 
-
+//declare a variable and starting game level
 let randomChosenColour;
-
 let level = 0;
 
 
-
+//a function to generate random number, then generate random computer chosen button
 function nextSequence() {
     let randomNumber = Math.floor(Math.random() * 4);
     //console.log(randomNumber);
@@ -33,10 +32,9 @@ function nextSequence() {
     //console.log(randomChosenColour);
     level++;
     $('#level-title').text(`Level = ${level}`);
-
-
-
 };
+
+
 
 let userClickedPattern = [];
 let userChosenColour;
